@@ -3,7 +3,7 @@ A compact and cheap PMOD compatible **STM32G030K8T6** based PCB.
 
 # Demo
 
-![Demo](./assets/demo.gif)
+![Demo](./assets/demo_blink.gif)
 
 # Features
 - Arm Cortex-M0+ MCU, 64 MHz CPU, 64 KB Flash, 8 KB RAM
@@ -26,7 +26,7 @@ A compact and cheap PMOD compatible **STM32G030K8T6** based PCB.
 
 ![3D Render](./assets/3drender.png)
 
-# UART Blink - Example
+# Example - UART Blink
 
 A small example to demonstrate the UART capabilities between the Arty Z7-20 Zynq PS and the STM32G030 MCU located under: `/UART_Blink_Example/`
 
@@ -41,3 +41,14 @@ A small example to demonstrate the UART capabilities between the Arty Z7-20 Zynq
 3. Program the FPGA and run the example in Vitis
 
 The FPGA needs to have the UART enabled and the uart_tx pin routed to the PMOD connector pin 3.
+
+# Example - UART OLED
+
+Another example to display incoming UART messages from the FPGA to a small OLED display connected to the PMOD board.
+
+![UART_OLED](./assets/demo_oled.gif)
+
+## Setup
+Same as UART Blink
+
+
